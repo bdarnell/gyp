@@ -5,9 +5,6 @@
 # found in the LICENSE file.
 
 from distutils.core import setup
-from distutils.command.install import install
-from distutils.command.install_lib import install_lib
-from distutils.command.install_scripts import install_scripts
 
 setup(
   name='gyp',
@@ -20,7 +17,4 @@ setup(
   packages=['gyp', 'gyp.generator'],
 
   scripts = ['gyp'],
-  cmdclass = {'install': install,
-              'install_lib': install_lib,
-              'install_scripts': install_scripts},
 )
